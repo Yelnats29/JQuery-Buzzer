@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box
+  }
+  
+  body {
+    background-image: url(https://img.freepik.com/free-photo/plate-with-fresh-cookies-from-oven_23-2148837150.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711929600&semt=ais);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #buzzer {
+    display: flex;
+    color: yellow;
+    padding: 2em;
+    border-radius: 50%;
+    font-size: 50px;
+    background-image: url(https://lastcrumb.com/cdn/shop/products/20200627_LastCrumb__AudreyMa_04521.jpg?v=1618324573);
+    background-size: cover;
+    cursor: pointer;
+    border: 5px solid yellow;
+  }
+  
+  #buzzer:hover {
+    color: hsl(352, 95%, 50%);
+    border: 5px solid red;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdPCb_oy1YNkY2hO0VTY3Kj-fGjdLVYqAHVhdJCnzpYET48rKKfQzQx2KMpDFjidhuRo&usqp=CAU);
+  }
+  
+  #buzzer:active {
+    color: hsl(0, 6%, 3%);
+    border: 5px solid black;
+  }
+  
+  #message {
+    font-size: 19px;
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cookieImages {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 50px;
+  }
+  /*property: hidden*/
+  .hiddenSugar {
+    display: none;
+  }
+  
+  
+  .hiddenChocolate {
+    display: none;
+  
+  }
+  
+  .hiddenOatmeal {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #buzzer {
+      padding: 60px;
+      font-size: 25px;
+    }
+  
+    #message {
+      font-size: 1em;
+    }
+  
+    .cookieImages {
+      bottom: 10px;
+    }
+  }
